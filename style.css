@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+.clock {
+  margin:3% auto;
+  background: url("clock.png") center no-repeat;
+  background-size: cover;
+  height:600px;
+  width:670px;
+  position: relative;
+}
+.clock .hour {
+  background: url("hour.png") center no-repeat;
+  width:50px;
+  height: 125px;
+  position: absolute;
+  left:260px;
+  top:185px;
+  transform: rotate(0deg);
+  transform-origin: 50% 100%;
+}
+.clock .minute {
+  background: url("minute.png") center no-repeat;
+  width:60px;
+  height: 205px;
+  position: absolute;
+  left:253px;
+  top:105px;
+  transform: rotate(90deg);
+  transform-origin: 50% 97%;
+}
+.clock .second {
+  background: url("second.png") center no-repeat;
+  width:50px;
+  height: 191px;
+  position: absolute;
+  left:260px;
+  top:120px;
+  transform: rotate(360deg);
+  transform-origin: 50% 98%;
+}
+.clock .center {
+  background: url("center.png") center no-repeat;
+  width:50px;
+  height: 191px;
+  position: absolute;
+  left:257px;
+  top:210px;
+}
+.clock .minute, .clock .hour, .clock .second {
+  transition: transform 0.1s;
+}
